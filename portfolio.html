@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+	<title>soorim portfolio</title>
+	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="https://kit.fontawesome.com/89a04b355d.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/final2.js"></script>
+	<script type="text/javascript" src="js/final.js"></script>
+	<link rel="shortcut icon" href="img/logo.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+	<section class="main-intro">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.77 197.68">
+			<defs>
+				<style>
+					@keyframes logo-ani {
+						0% {
+							stroke-dashoffset: 995;
+						}
+
+
+						50% {
+
+							stroke-dashoffset: 0;
+							fill: transparent;
+
+						}
+
+						75% {
+							fill: #333;
+						}
+
+						100% {
+							fill: black;
+						}
+					}
+
+					@keyframes logo-ani-2 {
+						0% {
+							stroke-dashoffset: 81;
+						}
+
+						50% {
+							stroke-dashoffset: 0;
+							fill: transparent;
+
+						}
+
+						100% {
+							fill: black;
+						}
+					}
+
+					@keyframes logo-ani-3 {
+						0% {
+							fill: transparent;
+						}
+
+						100% {
+							fill: white;
+						}
+					}
+
+					path {
+						transition: fill 0.2;
+					}
+
+					.start {
+						fill: none;
+						stroke: #000;
+						stroke-linecap: round;
+						stroke-linejoin: round;
+						stroke-width: 1px;
+						stroke-dasharray: 995;
+						animation: logo-ani 6s linear alternate forwards;
+					}
+
+					.drop {
+						stroke: none;
+						fill: none;
+						animation: logo-ani-2 1.5s linear alternate forwards;
+						animation-delay: 3s;
+					}
+
+					.cls-1 {
+						fill: transparent;
+						stroke: none;
+						animation: logo-ani-3 1s linear forwards;
+						animation-delay: 4.25s;
+					}
+				</style>
+			</defs>
+			<g id="Layer_1" data-name="Layer 1">
+				<path class="drop"
+					d="M43.67,164.68s-9,15-9.81,21.41c-.9,7.08,5.35,11.59,9.81,11.59,6,0,9-4.86,9-12S43.67,164.68,43.67,164.68Z" />
+				<path class="cls-1"
+					d="M47.55,177.6c.51-.32,1-.74.71-1.52a.88.88,0,0,0-1.2-.58c-.57.19-.74.65-.88,1.46-.19,1.18-.43,1.74-1.22,2a1.74,1.74,0,0,1-2.15-1.33,3.61,3.61,0,0,1-.15-1.37,11.35,11.35,0,0,1,1.18-.64l.15.24a1.6,1.6,0,0,0-.82,1.83,1,1,0,0,0,1.28.65c.64-.21.79-.64.95-1.51.19-1,.43-1.66,1.21-1.91a1.62,1.62,0,0,1,2,1.25,5.48,5.48,0,0,1,.2,1.15l-1.13.52Z" />
+				<path class="cls-1"
+					d="M45.36,185.23c0-.11-.06-.21-.09-.32a1.59,1.59,0,0,1,.3-1.56c.33-.46.76-.94,1.11-1.35.21-.26.23-.38.08-.82l-.09-.29-1.33.43c-.72.24-.73.35-.58,1.05l-.24.07-.74-2.26.24-.07c.31.67.36.72,1.08.48l3.38-1.1c.72-.24.71-.34.57-1l.24-.08.7,2.16a2.43,2.43,0,0,1,.16,1.45,1.33,1.33,0,0,1-.93.94,1.64,1.64,0,0,1-1.81-.62c-.22.24-.66.79-1,1.17a6.45,6.45,0,0,0-.65,1,1.31,1.31,0,0,0-.19.74Zm1.73-4a1.39,1.39,0,0,0,.55.85,1.24,1.24,0,0,0,1.19.12,1.19,1.19,0,0,0,.83-1.65.87.87,0,0,0-.23-.43c-.09-.05-.18-.05-.4,0l-2.07.68Z" />
+				<path class="start"
+					d="M0,21.68S13,33,24,29.35s25.71-7.67,25.71-7.67S54,26.48,54,30.08,46,64.68,33.67,79c-7.16,7.16,3.67,17.66,17.67,11.33s42-18,69.33-12.33c5,2-1.33,74.68-17.66,80s-35.67-9.34-37.67-9,21.67,41.33,33,37,26-14.67,30-29.67,13-66,17.67-69S150,81,144.34,77s-15-14-19-13-63,5.33-67.33,7.33-7,3-2.67-5S71.43,35,74.55,33.68,65.67,25,65.67,25s-7.57-4,8.88-5.34,56.79-9,89.12-5.33C170.34,15,159.34.68,155.34,0S-1,18.35,0,21.68Z" />
+			</g>
+		</svg>
+
+
+	</section>
+	<script>
+		console.log(document.querySelector('.drop').getTotalLength());
+	</script>
+</body>
+
+</html>

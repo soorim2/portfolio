@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Open+Sans&display=swap'); /* font-family: 'Noto Serif KR', serif; font-family: 'Open Sans', sans-serif; */
+@keyframes bg-change {
+    /* 0% {
+        background: url('../img/background_w.jpg');
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+
+    }
+
+    100% {
+        background: url('../img/background.jpg');
+    } */
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    animation: bg-change 2s linear alternate forwards;
+    animation-delay: 10s;
+}
+.main-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+svg{
+   overflow: visible;
+   width: 15vw;
+   transform: translate(-13% , -1%);
+}

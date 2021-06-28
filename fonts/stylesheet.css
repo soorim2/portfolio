@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('BookmanOldStyle-Bold.eot');
+    src: url('BookmanOldStyle-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BookmanOldStyle-Bold.woff2') format('woff2'),
+        url('BookmanOldStyle-Bold.woff') format('woff'),
+        url('BookmanOldStyle-Bold.ttf') format('truetype'),
+        url('BookmanOldStyle-Bold.svg#BookmanOldStyle-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('BookmanOldStyle.eot');
+    src: url('BookmanOldStyle.eot?#iefix') format('embedded-opentype'),
+        url('BookmanOldStyle.woff2') format('woff2'),
+        url('BookmanOldStyle.woff') format('woff'),
+        url('BookmanOldStyle.ttf') format('truetype'),
+        url('BookmanOldStyle.svg#BookmanOldStyle') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('BookmanOldStyle-BoldItalic.eot');
+    src: url('BookmanOldStyle-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BookmanOldStyle-BoldItalic.woff2') format('woff2'),
+        url('BookmanOldStyle-BoldItalic.woff') format('woff'),
+        url('BookmanOldStyle-BoldItalic.ttf') format('truetype'),
+        url('BookmanOldStyle-BoldItalic.svg#BookmanOldStyle-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('BookmanOldStyle-Italic.eot');
+    src: url('BookmanOldStyle-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BookmanOldStyle-Italic.woff2') format('woff2'),
+        url('BookmanOldStyle-Italic.woff') format('woff'),
+        url('BookmanOldStyle-Italic.ttf') format('truetype'),
+        url('BookmanOldStyle-Italic.svg#BookmanOldStyle-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
