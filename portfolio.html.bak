@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<title>soorim portfolio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/89a04b355d.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/final2.js"></script>
+	<script type="text/javascript" src="js/final.js"></script>
+	<link rel="shortcut icon" href="img/logo.ico">
+	<link rel="stylesheet" href="css/final.css">
+ </head>
+ <body>
+		  <!-- Hero -->
+	  <section class="et-hero-tabs" id="tab-es6">
+
+		<div class="et-hero-tabs-container">
+		  <a class="et-hero-tab" href="#tab-es6"><img class="logo_img" src="img/logo.png" alt="로고이미지"> </a>
+		  <a class="et-hero-tab" href="#tab-flexbox">Portfolio</a>
+		  <a class="et-hero-tab" href="#tab-react">About soorim</a>
+		  
+		  <span class="et-hero-tab-slider"></span>
+		</div>
+		<div id="about">
+			<div id="frame">
+				<div class="ipad">
+					<div class="transform_l">
+						<a class="text">who is soorim?</a>
+					</div>
+					<div class="transform_r">
+						<a class="file_icon" href="임지수이력서.hwp" download title="이력서 다운로드"> <img src="img/icon/file.png" alt="파일 아이콘"></a>
+					</div>
+					
+				</div>
+				<div class="right">
+					<div class="card_frame">
+						<div class="card back">
+							<a class="dark"><i class="fas fa-search-plus"></i></div>
+						</a>
+						<div class="card front">
+							<a class="dark"><i class="fas fa-search-plus"></i></div>
+						</a>
+					</div>
+					<div class="iphone">
+						<div class="hover">
+							<a href="#">Logo ?</a>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="card_dark card_dark_1">
+					<div class="show_card">
+						<img src="img/card_f.JPG" alt="명함 앞">
+					</div>
+				</div>
+				<div class="card_dark card_dark_2">
+					<div class="show_card">
+						<img src="img/card_b.JPG" alt="명함 뒤">
+					</div>
+				</div>
+				
+				<div class="logo_dark">
+					<img src="img/logo_detail.png" alt="">
+				</div>
+			</div>
+		</div>
+	  </section>
+
+	  <!-- Main -->
+	  <main class="et-main">
+
+
+		<section class="et-slide" id="tab-flexbox">
+
+			 <div id="all">
+				<div id="allcontent">
+					<div id="maincontent">
+						<div class="portfolio">
+							<img src="img/sub/bo.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC <a class="pf_a" href="http://artistsoorim.com/B&O/main.html" target="_blank" title="B&O site">사이트 바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/wedding.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC <a class="pf_a" href="http://artistsoorim.com/wedding/index.html" target="_blank" title="wedding  site">사이트 바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/invest.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC <a class="pf_a" href="http://artistsoorim.com/investPlan/index.html" target="_blank" title="invest site">사이트 바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/kuliner.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC <a class="pf_a" href="http://artistsoorim.com/kuliner/index.html" target="_blank" title="kuliner site"> 사이트 바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/war.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC Tablet Mobile<a class="pf_a" href="http://artistsoorim.com/war/index.html" target="_blank" title="movie site"> 사이트 바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/origin.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC Tablet Mobile<a class="pf_a" href="http://artistsoorim.com/origin/index.html" target="_blank" title="origin site"> 사이트 바로가기</a></span>
+						
+						</div>
+					<!-- 
+						<div class="portfolio">
+							<img src="img/sub/reactive.JPG"><br>
+							<span class="txt">퍼블리싱 100% . 반응형 <a class="pf_a" href="http://artistsoorim.com/Restaurant/index.html" target="_blank" title="restaurant"> 사이트 바로가기</a></span>
+						
+						</div>
+					 -->
+						<div class="portfolio">
+							<img src="img/sub/actor.JPG"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100%  <i class="far fa-eye"></i> PC Tablet Mobile <a class="pf_a" href="http://artistsoorim.com/act/index.html" target="_blank" title="act site">사이트바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/hospital.png"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Publishing 100% <i class="far fa-eye"></i> PC <a class="pf_a" href="http://artistsoorim.com/hospital/index.html" target="_blank" title="hospital site">사이트바로가기</a></span>
+						
+						</div>
+						<div class="portfolio">
+							<img src="img/sub/tattoo.jpg"><br>
+							<span class="txt"><i class="fas fa-edit"></i> Desigin 100%  Publishing 100%  <i class="far fa-eye"></i> PC Tablet Mobile <a class="pf_a" href="http://artistsoorim.com/tattooSite/home.html" target="_blank" title="Tattoo site">사이트바로가기</a> </span>
+							
+						</div>
+
+					</div>
+					<div id="navi">
+					</div>
+					<div class="footer"><a alt="home"></a> / <a alt="lab">lab</a></div>
+				</div>
+				
+			</div>
+
+		</section>
+
+
+		<section class="et-slide" id="tab-react">
+			<div class="intro">
+				<div class="intro_frame">
+					<div class="textbox">
+						<ul>
+							<li class="head">임지수 <span class="subname">(=soorim)</span> </li>
+							<li>Age : 26 <span class="subname">(만 24세)</span></li>
+							
+						</ul>
+
+					<div class="textbox">
+						<ul>
+							<li class="head">Software Skills</li>
+							<li>Illustrator</li>
+							<li>Photoshop</li>
+							<li>XD</li>
+							<li>Premiere Pro</li>
+						</ul>
+					</div>
+					<div class="textbox">
+						<ul>
+							<li class="head">Licence</li>
+							<li>웹디자인 기능사</li>
+							<li>운전면허 1종</li>
+							<li>태권도 2단</li>
+							<li>특공무술 2단</li>
+							<li>합기도 2단</li>
+						</ul>
+					</div>
+					<div class="textbox">
+						<ul>
+							<li class="head"></li>
+							<li class="more"> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/tattooist_soorim" target="_blank" title="인스타그램 바로가기"> instagram </a></li>
+						</ul>
+					</div>
+				</div>
+		  </div>
+		</section>
+
+	  </main>
+ </body>
+</html>
