@@ -8,7 +8,7 @@
 	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 	</script>
 	<script src="https://kit.fontawesome.com/89a04b355d.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/final2.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/intro.js"></script>
 	<link rel="shortcut icon" href="img/logo.ico">
 	<link rel="stylesheet" href="css/style.css">
@@ -113,7 +113,7 @@
 	</div>
 	<main class="main" role="main">
 		<div class="container">
-			<header>
+			<header data-anchor="intro">
 				<div class="bar">
 					<div class="bar-logo">
 						<!-- <img src="./img/logo.svg" alt="로고"> -->
@@ -149,48 +149,107 @@
 					</div>
 				</div>
 			</header>
-			<section class="content">
+			<section class="content" >
 					<div class="door-container">
 						<div class="door">
+							
 							<div class="door-back">
 								<div class="welcome center">
 									<div class="welcome1">
 										Thank You for Visiting
 									</div>
-									<div class=" welcome2 center column">
-										<a href="javascript:void(0)">work</a>
-										<a href="javascript:void(0)">skill</a>
+									<div class=" welcome2 center column" id="nav">
+										<a href="javascript:void(0)" data-scroll="work" >work</a>
+										<a href="javascript:void(0)"data-scroll="skill">skill</a>
 									</div>
 								</div>
 							</div>
-							<div class="door-body door-left"></div>
-							<div class="door-body door-right"></div>
+							<div class="cursor"></div>
+							<div class="door-body door-left">
+							</div>
+							<div class="door-body door-right">
+							</div>
 						</div>
 						
 					</div>
 			</section>
 			<nav class="intro start">
-				<div class="content-title">
-					intro
+				<div class="content-title" id="title">
+					<p>
+						intro
+					</p>
+					<p>
+						work
+					</p>
+					<p>
+						work(no-link)
+					</p>
+					<p>
+						skill
+					</p>
 				</div>
-				<ul class="category around">
-					<li><a href="javascript:void(0)">intro</a></li>
-					<li><a href="javascript:void(0)">work</a></li>
-					<li><a href="javascript:void(0)">work(design)</a></li>
-					<li><a href="javascript:void(0)">skill</a></li>
+				<ul class="category around" id="nav">
+					<li class="active" ><a href="javascript:void(0)" data-scroll="intro">intro</a></li>
+					<li ><a href="javascript:void(0)" data-scroll="work">work</a></li>
+					<li><a href="javascript:void(0)" data-scroll="workD">work(no-link)</a></li>
+					<li ><a href="javascript:void(0)" data-scroll="skill">skill</a></li>
 				</ul>
 			</nav>
-			<section class="content">work</section>
-			<section class="content">work(design)</section>
-			<section class="content">skill</section>
+			<section class="content" data-anchor="work">
+				<div class="work work1">
+					<div class="work-name">
+						<a href="https://www.sktcloudmarketplace.com/" target="_blank">SKT Market Place (customer)</a>
+					</div>
+					<div class="work-info">
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="work work2">
+					<div class="work-info">
+					</div>
+					<div class="work-name">
+						<a href="https://seller.sktcloudmarketplace.com/" target="_blank">SKT Market Place (seller)</a>
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="work work3">
+					<div class="work-name">
+						<a href="https://aip.snu.ac.kr/" target="_blank">SNU AIP</a>
+					</div>
+					<div class="work-info">
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="work work4">
+					<div class="work-info">
+					</div>
+					<div class="work-name">
+						<a href="https://aip.snu.ac.kr/" target="_blank">Tattoo Studio Site (personal-work)</a>
+					</div>
+				</div>
+				<div class="blank"></div>
+			</section>
+			<section class="content"  data-anchor="workD">
+				<div class="work-d work-d1 start column">
+					<div class="work-d-header">
+						<p class="work-name">
+							Taco (가명)
+						</p>
+						<div class="work-info">
+						</div>
+					</div>
+					<div class="work-img">
+						<img src="./img/work5-1.png" alt="작업물 이미지">
+						<img src="./img/work5-2.png" alt="작업물 이미지">
+						<img src="./img/work5-3.png" alt="작업물 이미지">
+						<img src="./img/work5-4.png" alt="작업물 이미지">
+					</div>
+				</div>
+				
+			</section>
+			<section class="content" data-anchor="skill">skill</section>
 		</div>
-		<svg class="the-svg" style=" position: absolute;
-		left: 0;
-		top: 0;
-		width: 30px;
-		height: 30px;">
-			<path class="magnifier" d="M150.81 41.26a80.5 80.5 0 1 0-41.94 114.6l36.28 64.95a12 12 0 1 0 20.95-11.7l-36.29-64.95a80.51 80.51 0 0 0 21-102.9zm-41 91.63a60 60 0 1 1 23.12-81.64 60 60 0 0 1-23.12 81.64z" fill="#ce0000"/>
-		</svg>
+		
 	</main>
 	<script>
 		const span1 = document.querySelector('#span_1');
@@ -216,17 +275,7 @@
 			studyInfo.classList.remove('active');
 		}
 
-		const doorArea = document.querySelector('.door-body');
-		const magnifierElem = document.querySelector('.magnifier');
-
-        window.addEventListener('mousemove', (e) => {
-			console.log(e.clientX, e.clientY)
-			if(e.target === doorArea){
-				magnifierElem.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-				console.log(e.target);
-			}
-        });
-		// console.log(document.querySelector('.drop').getTotalLength());
+		
 	</script>
 </body>
 
