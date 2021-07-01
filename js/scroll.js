@@ -99,36 +99,8 @@ $(document).ready(function () {
 		})
 		.scroll();
 
-	// $('#nav1').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('header').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
-
-	// $('#nav2').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('#work').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
-
-	// $('#nav3').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('#skill').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
-
 	window.addEventListener('wheel', e => {
 		let direction = '';
-		// console.log()
 		// e.preventDefault;
 		let windscroll = window.pageYOffset;
 		const workSection = document.querySelector('#work').offsetTop - 40;
@@ -142,8 +114,8 @@ $(document).ready(function () {
 						left: 0,
 						behavior: 'smooth',
 					});
-					console.log(windscroll);
-					console.log(workSection);
+					// console.log(windscroll);
+					// console.log(workSection);
 				}
 			}
 		} else {
@@ -156,8 +128,8 @@ $(document).ready(function () {
 						left: 0,
 						behavior: 'smooth',
 					});
-					console.log(windscroll);
-					console.log(workSection);
+					// console.log(windscroll);
+					// console.log(workSection);
 				}
 			}
 		}
