@@ -27,56 +27,57 @@ $(document).ready(function () {
 		);
 		return false;
 	});
-	// console.log(windscroll);
-	$('html, body').on('mousewheel DOMMouseScroll', function (e) {
-		e.preventDefault();
-		let windscroll = $(window).scrollTop();
-		const workSection = $('[data-anchor="work"]').offset().top - 40;
-		if (windscroll <= 850) {
-			let ev = e.originalEvent;
-			delta = 0;
-			if (ev.detail) {
-				delta = ev.detail * -40;
-				if (delta < 0) {
-					console.log('스크롤 내림');
-					$('body,html').animate(
-						{
-							scrollTop: workSection,
-						},
-						800
-					);
-				} else {
-					console.log('스크롤 올림');
-					$('body,html').animate(
-						{
-							scrollTop: 0,
-						},
-						800
-					);
-				}
-			} else {
-				delta = ev.wheelDelta;
-				if (delta < 0) {
-					console.log('스크롤 내림');
-					$('body,html').animate(
-						{
-							scrollTop: workSection,
-						},
-						800
-					);
-				} else {
-					console.log('스크롤 올림');
-					$('body,html').animate(
-						{
-							scrollTop: 0,
-						},
-						800
-					);
-				}
-			}
-		}
-		// console.log(windscroll);
-	});
+
+	// $('html, body').on('mousewheel DOMMouseScroll', function (e) {
+	// 	e.preventDefault();
+	// 	let windscroll = $(window).scrollTop();
+	// 	const workSection = $('[data-anchor="work"]').offset().top - 40;
+	// 	if (windscroll <= 850) {
+	// 		let ev = e.originalEvent;
+	// 		delta = 0;
+	// 		if (ev.detail) {
+	// 			delta = ev.detail * -40;
+	// 			if (delta < 0) {
+	// 				console.log('스크롤 내림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: workSection,
+	// 					},
+	// 					800
+	// 				);
+	// 			} else {
+	// 				console.log('스크롤 올림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: 0,
+	// 					},
+	// 					800
+	// 				);
+	// 			}
+	// 		} else {
+	// 			delta = ev.wheelDelta;
+	// 			if (delta < 0) {
+	// 				console.log('스크롤 내림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: workSection,
+	// 					},
+	// 					800
+	// 				);
+	// 			} else {
+	// 				console.log('스크롤 올림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: 0,
+	// 					},
+	// 					800
+	// 				);
+	// 			}
+	// 		}
+	// 	}
+	// 	// console.log(windscroll);
+	// });
+
 	$(window)
 		.scroll(function () {
 			let windscroll = $(window).scrollTop();
@@ -124,4 +125,41 @@ $(document).ready(function () {
 	// 		300
 	// 	);
 	// });
+
+	window.addEventListener('wheel', e => {
+		let direction = '';
+		// console.log()
+		// e.preventDefault;
+		let windscroll = window.pageYOffset;
+		const workSection = document.querySelector('#work').offsetTop - 40;
+		if (windscroll <= workSection) {
+			if (e.deltaY > 0) {
+				if (direction !== 'down') {
+					console.log(direction);
+					direction = 'down';
+					window.scrollTo({
+						top: workSection,
+						left: 0,
+						behavior: 'smooth',
+					});
+					console.log(windscroll);
+					console.log(workSection);
+				}
+			}
+		} else {
+			if (e.deltaY < 0) {
+				if (direction !== 'up') {
+					console.log(direction);
+					direction = 'up';
+					window.scrollTo({
+						top: 0,
+						left: 0,
+						behavior: 'smooth',
+					});
+					console.log(windscroll);
+					console.log(workSection);
+				}
+			}
+		}
+	});
 });
