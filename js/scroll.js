@@ -25,17 +25,65 @@ $(document).ready(function () {
 			},
 			500
 		);
-		console.log(scrollAnchor.attr);
-
 		return false;
 	});
+
+	// $('html, body').on('mousewheel DOMMouseScroll', function (e) {
+	// 	e.preventDefault();
+	// 	let windscroll = $(window).scrollTop();
+	// 	const workSection = $('[data-anchor="work"]').offset().top - 40;
+	// 	if (windscroll <= 850) {
+	// 		let ev = e.originalEvent;
+	// 		delta = 0;
+	// 		if (ev.detail) {
+	// 			delta = ev.detail * -40;
+	// 			if (delta < 0) {
+	// 				console.log('스크롤 내림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: workSection,
+	// 					},
+	// 					800
+	// 				);
+	// 			} else {
+	// 				console.log('스크롤 올림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: 0,
+	// 					},
+	// 					800
+	// 				);
+	// 			}
+	// 		} else {
+	// 			delta = ev.wheelDelta;
+	// 			if (delta < 0) {
+	// 				console.log('스크롤 내림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: workSection,
+	// 					},
+	// 					800
+	// 				);
+	// 			} else {
+	// 				console.log('스크롤 올림');
+	// 				$('body,html').animate(
+	// 					{
+	// 						scrollTop: 0,
+	// 					},
+	// 					800
+	// 				);
+	// 			}
+	// 		}
+	// 	}
+	// 	// console.log(windscroll);
+	// });
+
 	$(window)
 		.scroll(function () {
 			let windscroll = $(window).scrollTop();
-			console.log(windscroll);
-			if (windscroll >= 100) {
+			if (windscroll >= 0) {
 				$('.container section').each(function (i) {
-					if ($(this).position().top <= windscroll - -41) {
+					if ($(this).position().top <= windscroll - -42) {
 						$('#nav li.active').removeClass('active');
 						$('#nav li').eq(i).addClass('active');
 						$('#title p.active').removeClass('active');
@@ -51,30 +99,39 @@ $(document).ready(function () {
 		})
 		.scroll();
 
-	// $('#nav1').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('header').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
-
-	// $('#nav2').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('#work').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
-
-	// $('#nav3').click(function () {
-	// 	$('html,body').animate(
-	// 		{
-	// 			scrollTop: $('#skill').offset().top,
-	// 		},
-	// 		300
-	// 	);
-	// });
+	window.addEventListener('wheel', e => {
+		let direction = '';
+		// e.preventDefault;
+		let windscroll = window.pageYOffset;
+		const workSection = document.querySelector('#work').offsetTop - 40;
+		if (windscroll <= workSection) {
+			if (e.deltaY > 0) {
+				if (direction !== 'down') {
+					console.log(direction);
+					direction = 'down';
+					window.scrollTo({
+						top: workSection,
+						left: 0,
+						behavior: 'smooth',
+					});
+					// console.log(windscroll);
+					// console.log(workSection);
+				}
+			}
+		} else {
+			if (e.deltaY < 0) {
+				if (direction !== 'up') {
+					console.log(direction);
+					direction = 'up';
+					window.scrollTo({
+						top: 0,
+						left: 0,
+						behavior: 'smooth',
+					});
+					// console.log(windscroll);
+					// console.log(workSection);
+				}
+			}
+		}
+	});
 });
