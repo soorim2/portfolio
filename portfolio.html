@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>soorim portfolio</title>
 	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 	</script>
 	<script src="https://kit.fontawesome.com/89a04b355d.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/intro.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
 	<link rel="shortcut icon" href="img/logo.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -138,10 +139,10 @@
 							</div>
 						</div>
 						<div class="bar-contact-icon center column" onmouseover={onCursor2()} onmouseout={offCursor2()}>
-							<a href="https://github.com/soorim-coding-kr" target="_blank" title="github 보러가기">
+							<a href="https://www.notion.so/study-3a97c96eb889489896246f670a3aab5b" target="_blank" title="notion 보러가기">
 								<img src="https://img.icons8.com/ios/50/000000/notion.png"/>
 							</a>
-							<a href="https://www.notion.so/study-3a97c96eb889489896246f670a3aab5b" target="_blank" title="notion 보러가기">
+							<a href="https://github.com/soorim-coding-kr" target="_blank" title="github 보러가기">
 								<img src="https://img.icons8.com/ios-glyphs/60/000000/github.png"/>
 							</a>
 						</div>
@@ -159,8 +160,8 @@
 										Thank You for Visiting
 									</div>
 									<div class=" welcome2 center column" id="nav">
-										<a href="javascript:void(0)" data-scroll="work" >work</a>
-										<a href="javascript:void(0)"data-scroll="skill">skill</a>
+										<a href="javascript:void(0)" data-scroll="work" title="work">work</a>
+										<a href="javascript:void(0)"data-scroll="skill" title="skill">skill</a>
 									</div>
 								</div>
 							</div>
@@ -200,12 +201,16 @@
 					<div class="work-name">
 						<a href="https://www.sktcloudmarketplace.com/" target="_blank">SKT Market Place (customer)</a>
 					</div>
-					<div class="work-info">
+					<div class="work-info start-end">
+						web publising:100%<br/>
+						use library :<br/> core-ui,vue-agile, toast-ui
 					</div>
 				</div>
 				<div class="blank"></div>
 				<div class="work work2">
-					<div class="work-info">
+					<div class="work-info start-end">
+						web publising:100%<br/>
+						use library :<br/> core-ui,vue-agile, toast-ui
 					</div>
 					<div class="work-name">
 						<a href="https://seller.sktcloudmarketplace.com/" target="_blank">SKT Market Place (seller)</a>
@@ -216,15 +221,30 @@
 					<div class="work-name">
 						<a href="https://aip.snu.ac.kr/" target="_blank">SNU AIP</a>
 					</div>
-					<div class="work-info">
+					<div class="work-info start-end">
+						web publising:100%
 					</div>
 				</div>
 				<div class="blank"></div>
 				<div class="work work4">
-					<div class="work-info">
+					<div class="work-info start-end">
+						web plan:100% <br/>
+						web design:100% <br/>
+						logo design:100% <br/>
+						web publising:100%
 					</div>
 					<div class="work-name">
-						<a href="https://aip.snu.ac.kr/" target="_blank">Tattoo Studio Site (personal-work)</a>
+						<a href="http://soorim-coding.co.kr/studio_soorim/home.html" target="_blank">Tattoo Studio Site (personal-work)</a>
+					</div>
+				</div>
+				<div class="blank"></div>
+				<div class="work work5">
+					<div class="work-name">
+						<a href="https://globalagronetwork.com/" target="_blank">Global agro network</a>
+					</div>
+					<div class="work-info start-end">
+						web design:100% <br/>
+						web publising:100%
 					</div>
 				</div>
 				<div class="blank"></div>
@@ -238,16 +258,166 @@
 						<div class="work-info">
 						</div>
 					</div>
-					<div class="work-img">
-						<img src="./img/work5-1.png" alt="작업물 이미지">
-						<img src="./img/work5-2.png" alt="작업물 이미지">
-						<img src="./img/work5-3.png" alt="작업물 이미지">
-						<img src="./img/work5-4.png" alt="작업물 이미지">
+					<div class="work-contents">
+						<div class="work-carousel">
+							<div class="work-carousel-item">
+								<img src="./img/work5-1.jpg" alt="작업물 이미지">
+							</div>
+							<div class="work-carousel-item">
+								<img src="./img/work5-2.jpg" alt="작업물 이미지">
+							</div>
+							<div class="work-carousel-item">
+								<img src="./img/work5-3.jpg" alt="작업물 이미지">
+							</div>
+							<div class="work-carousel-item">
+								<img src="./img/work5-4.jpg" alt="작업물 이미지">
+							</div>
+							<nav class="work-carousel-nav between">
+								<button onclick="plusSlides(-1)" class="nav-btn prev center">
+									<i class="fas fa-chevron-left"></i>
+								</button>
+								<button onclick="plusSlides(1)" class="nav-btn next center">
+									<i class="fas fa-chevron-right"></i>
+								</button>
+							</nav>
+						</div>
+						<div class="work-desc start-end">
+							web design : 100%<br/>
+							logo design : 100%<br/>
+							web publising : 100%<br/>
+							use library : <br/> material ui, arm chart
+						</div>
 					</div>
-				</div>
+				</div>   
+				<div class="blank"></div>
+				<div class="work-d work-d1 start column">
+					<div class="work-d-header">
+						<p class="work-name">
+							Pickle (가명) - 사내 근태관리 프로젝트
+						</p>
+						<div class="work-info">
+						</div>
+					</div>
+					<div class="work-contents">
+						<div class="work-imgs start column">
+							<img src="./img/work6-1.jpg" alt="작업물 이미지">
+							<img src="./img/work6-2.jpg" alt="작업물 이미지">
+						</div>
+						<div class="work-desc work-desc2 start-top column">
+							<div>
+								app design : 100%<br/>
+								web design : 100%<br/>
+								logo design : 100%<br/>
+								web publising : 100%<br/>
+								app publising : 100%<br/>
+								use library : material ui
+							</div>
+							<div class="blank"></div>
+						</div>
+					</div>
+				</div>   
 				
 			</section>
-			<section class="content" data-anchor="skill">skill</section>
+			<section class="content" data-anchor="skill">
+				<div class="skills">
+					<div class="skill-grp between-top column">
+						<div class="Knowledge-title between">
+							<h4>Knowledge</h4>
+							<div class="Knowledge-link">
+								<a href="https://www.notion.so/study-3a97c96eb889489896246f670a3aab5b" target="_blank" title="notion 보러가기">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="20" height="20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+										<style type="text/css">
+											path{fill:url(#MyGradient)}
+										</style>
+										<defs>
+											<linearGradient id="MyGradient">
+											<stop offset="0%" stop-color="rgb(66, 143, 214)" />
+											<stop offset="100%" stop-color="rgb(30, 156, 104)" />
+											</linearGradient>
+										</defs>
+										<path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514c-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233l4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z" /></svg>
+								</a>
+								<a href="https://github.com/soorim-coding-kr" target="_blank" title="github 보러가기">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="20" height="20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+										<style type="text/css">
+											path{fill:url(#MyGradient)}
+										</style>
+										<defs>
+											<linearGradient id="MyGradient">
+											<stop offset="0%" stop-color="rgb(66, 143, 214)" />
+											<stop offset="100%" stop-color="rgb(30, 156, 104)" />
+											</linearGradient>
+										</defs><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+								</a>
+							</div>
+						</div>
+							<p>
+								html<br>
+								css<br>
+								javascript<br>
+								jquery<br>
+								react<br>
+								vue<br>
+								scss<br>
+								jsx<br>
+								git
+							</p>
+					</div>
+					<div class="skill-grp between-top column">
+						<h4>Software</h4>
+						<p>
+							souce tree<br>
+							vs code<br>
+							Illustrator<br>
+							Photoshop<br>
+							XD<br>
+							Premiere Pro
+						</p>
+					</div>
+					
+					<div class="skill-grp between-top column">
+						<h4>Licence</h4>
+						<p>
+							웹디자인 기능사<br>
+						</p>
+					</div>
+					<div class="skill-grp between-top column">
+						<h4>Career</h4>
+						<p>
+							2020.4 ~ <br>
+							직장명 : 스타랩스 <br>
+							소속 : 연구개발실 <br>
+							직책 : 선임 <br>
+						</p>
+					</div>
+					<!-- <div class="skill-grp between-top column">
+						<h4>Other</h4>
+						<div>
+							
+							<a href="https://www.instagram.com/tattooist_soorim/" target="_blank" title="인스타그램">
+								<svg class="instagram-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+								viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
+									<style type="text/css">
+										path,circle{fill:url(#MyGradient)}
+									</style>
+									<defs>
+										<linearGradient id="MyGradient">
+										<stop offset="0%" stop-color="rgb(66, 143, 214)" />
+										<stop offset="100%" stop-color="rgb(30, 156, 104)" />
+										</linearGradient>
+									</defs>
+									<path class="logo" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+	
+									<path id="XMLID_81_" fill="#555" d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+	
+									<circle id="XMLID_83_" fill="#555" cx="418.306" cy="134.072" r="34.149"/>
+	
+								</svg><br>
+							</a>
+						</div>
+					</div> -->
+				</div>
+			</section>
 		</div>
 		
 	</main>
@@ -274,8 +444,26 @@
 			span2.classList.remove('active')
 			studyInfo.classList.remove('active');
 		}
-
 		
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+			showSlides((slideIndex += n));
+		}
+		function showSlides(n) {
+			let i;
+			const slides = $('.work-carousel .work-carousel-item');
+			if (n > slides.length) {
+				slideIndex = 1;
+			}
+			if (n < 1) {
+				slideIndex = slides.length;
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.opacity = 0;
+			}
+			slides[slideIndex - 1].style.opacity = 1;
+		}
 	</script>
 </body>
 

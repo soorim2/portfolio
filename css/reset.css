@@ -21,8 +21,7 @@ header:after,
 section:after,
 article:after,
 footer:after,
-aside:after,
-nav:after {
+aside:after {
 	content: '';
 	display: block;
 	clear: both;

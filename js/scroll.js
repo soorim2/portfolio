@@ -25,17 +25,64 @@ $(document).ready(function () {
 			},
 			500
 		);
-		console.log(scrollAnchor.attr);
-
 		return false;
+	});
+	// console.log(windscroll);
+	$('html, body').on('mousewheel DOMMouseScroll', function (e) {
+		e.preventDefault();
+		let windscroll = $(window).scrollTop();
+		const workSection = $('[data-anchor="work"]').offset().top - 40;
+		if (windscroll <= 850) {
+			let ev = e.originalEvent;
+			delta = 0;
+			if (ev.detail) {
+				delta = ev.detail * -40;
+				if (delta < 0) {
+					console.log('스크롤 내림');
+					$('body,html').animate(
+						{
+							scrollTop: workSection,
+						},
+						800
+					);
+				} else {
+					console.log('스크롤 올림');
+					$('body,html').animate(
+						{
+							scrollTop: 0,
+						},
+						800
+					);
+				}
+			} else {
+				delta = ev.wheelDelta;
+				if (delta < 0) {
+					console.log('스크롤 내림');
+					$('body,html').animate(
+						{
+							scrollTop: workSection,
+						},
+						800
+					);
+				} else {
+					console.log('스크롤 올림');
+					$('body,html').animate(
+						{
+							scrollTop: 0,
+						},
+						800
+					);
+				}
+			}
+		}
+		// console.log(windscroll);
 	});
 	$(window)
 		.scroll(function () {
 			let windscroll = $(window).scrollTop();
-			console.log(windscroll);
-			if (windscroll >= 100) {
+			if (windscroll >= 0) {
 				$('.container section').each(function (i) {
-					if ($(this).position().top <= windscroll - -41) {
+					if ($(this).position().top <= windscroll - -42) {
 						$('#nav li.active').removeClass('active');
 						$('#nav li').eq(i).addClass('active');
 						$('#title p.active').removeClass('active');
