@@ -107,7 +107,7 @@ $(document).ready(function () {
 		if (windscroll <= workSection) {
 			if (e.deltaY > 0) {
 				if (direction !== 'down') {
-					console.log(direction);
+					// console.log(direction);
 					direction = 'down';
 					window.scrollTo({
 						top: workSection,
@@ -121,7 +121,7 @@ $(document).ready(function () {
 		} else {
 			if (e.deltaY < 0) {
 				if (direction !== 'up') {
-					console.log(direction);
+					// console.log(direction);
 					direction = 'up';
 					window.scrollTo({
 						top: 0,
