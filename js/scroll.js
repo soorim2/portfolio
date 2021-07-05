@@ -118,7 +118,6 @@ $(document).ready(function () {
 					// console.log(workSection);
 				}
 			}
-		} else {
 			if (e.deltaY < 0) {
 				if (direction !== 'up') {
 					// console.log(direction);
@@ -132,6 +131,6 @@ $(document).ready(function () {
 					// console.log(workSection);
 				}
 			}
-		}
+		} else return;
 	});
 });
