@@ -40,7 +40,7 @@
 	-webkit-animation-delay: 6.5s;
 	animation-delay: 6.5s;
 	z-index: 999;
-	display: none;
+	/* display: none; */
 }
 .main-intro svg {
 	overflow: visible;
@@ -759,7 +759,7 @@ nav.intro ul.category li a {
 	width: 100%;
 }
 .work-d .work-contents .work-carousel {
-	width: 700px;
+	width: 70%;
 	position: relative;
 	height: 300px;
 
@@ -818,7 +818,7 @@ nav.intro ul.category li a {
 	color: white;
 }
 .work-d .work-contents .work-imgs {
-	width: 700px;
+	width: 63%;
 }
 .work-d .work-contents .work-imgs img {
 	width: 100%;
@@ -827,10 +827,10 @@ nav.intro ul.category li a {
 	border-top: 1px solid #444;
 }
 .work-d .work-contents .work-desc {
+	width: 37%;
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-	width: calc(100% - 700px);
 	border-left: 1px solid #444;
 	padding: 10px;
 	color: #444;
